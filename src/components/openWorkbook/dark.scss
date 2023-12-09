@@ -1,0 +1,23 @@
+.main_dark {
+    .list_open {
+        ul {
+            li {
+                background-color: #222235;
+                color: #fff;
+
+                span {
+                    color: #b3c1ff;
+                }
+            }
+        }
+    }
+
+    .modal_course {
+
+        input,
+        select {
+            background-color: rgba(47, 73, 209, 0.6);
+            ;
+        }
+    }
+}

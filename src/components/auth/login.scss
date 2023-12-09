@@ -1,0 +1,213 @@
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  gap: 0;
+  position: relative;
+
+  .left {
+    width: 50%;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    img {
+      width: 500px;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(216, 216, 216);
+    width: 50%;
+    border-radius: 15px;
+    padding: 50px;
+    gap: 50px;
+    padding-top: 10px;
+
+    .signIn {
+      margin: 0;
+      margin-bottom: -10px;
+      font-weight: 700;
+      margin: 0 auto;
+      color: rgba(0, 47, 69, 0.736);
+    }
+  }
+
+  .divInput {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    input {
+      width: 100%;
+      border: 2px solid blue;
+      border-radius: 10px;
+      padding: 10px;
+      color: blue;
+      outline: none;
+    }
+  }
+
+  .disablet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    input {
+      width: 100%;
+      border: 2px solid rgb(171, 230, 244);
+      border-radius: 10px;
+      padding: 10px;
+      color: blue;
+      background-color: rgb(204, 204, 204);
+      color: #fff;
+      outline: none;
+    }
+  }
+
+  .sendButton {
+    border: 2px solid blue;
+    padding: 20px !important;
+    background-color: blue;
+    font-weight: 900;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+
+    &:hover {
+      background-color: rgb(4, 26, 168);
+    }
+  }
+
+  .registrInput {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    input {
+      width: 45%;
+      border: 2px solid blue;
+      border-radius: 10px;
+      padding: 10px;
+      color: blue;
+      outline: none;
+    }
+  }
+
+  .registrdisablet {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    input {
+      width: 45%;
+      border: 2px solid rgb(171, 230, 244);
+      border-radius: 10px;
+      padding: 10px;
+      color: blue;
+      background-color: rgb(204, 204, 204);
+      color: #fff;
+      outline: none;
+    }
+  }
+
+  .spanFather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+  }
+
+  .parolcha {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+
+    span {
+      font-weight: 600;
+      color: blue;
+      margin-right: 40px;
+      position: absolute;
+      bottom: 150px;
+      right: 220px;
+      font-size: 22px;
+    }
+
+    .finish {
+      color: red;
+    }
+
+    input {
+      width: 100%;
+      border: 2px solid blue;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+      color: rgb(58, 58, 255);
+      outline: none;
+      -moz-appearance: none;
+    }
+  }
+
+  .parol {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: -30px;
+    margin-bottom: -30px;
+
+    span {
+      font-weight: 600;
+      margin-left: 150px;
+      color: blue;
+      font-size: 22px;
+      margin-right: 40px;
+    }
+
+    .finish {
+      color: red;
+    }
+
+    input {
+      width: 30%;
+      border: 2px solid blue;
+      border-radius: 10px;
+      padding: 10px;
+      color: rgb(58, 58, 255);
+      outline: none;
+    }
+  }
+
+  .comeBack,
+  .registr {
+    cursor: pointer;
+    color: cadetblue;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .error {
+    border: 2px solid red;
+    color: red;
+  }
+}

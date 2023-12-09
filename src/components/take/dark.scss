@@ -1,0 +1,31 @@
+.main_dark {
+  tr {
+    color: #fff;
+  }
+
+  input,
+  select {
+    background: #515c8d;
+    color: #fff;
+
+    &::-webkit-input-placeholder {
+      color: #ffffffc2;
+    }
+
+    &::-moz-placeholder {
+      color: #ffffffc2;
+    }
+
+    &:-ms-input-placeholder {
+      color: #ffffffc2;
+    }
+
+    &:-moz-placeholder {
+      color: #ffffffc2;
+    }
+  }
+
+  div {
+    color: #fff;
+  }
+}

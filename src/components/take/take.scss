@@ -1,0 +1,86 @@
+.take_input {
+    position: relative;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        margin: 0 100px;
+        margin-top: 50px;
+    }
+
+    button {
+        width: 280px;
+        height: 48px;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        background: #2f49d1;
+        border-radius: 8px;
+        color: #ffffff;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 101px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+
+    select {
+        appearance: none;
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid rgba(47, 73, 209, 0.6);
+        border-radius: 8px;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 48px;
+        padding: 13px;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.take_select {
+    margin-top: 180px;
+    width: 280px !important;
+}
+
+@media screen and (max-width: 1207px) {
+    .take_input {
+        div {
+            margin: 0;
+            margin-top: 50px;
+        }
+
+        button {
+            right: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 802px) {
+    .take_input {
+        div {
+            gap: 20px;
+        }
+
+        select {
+            font-size: 15px;
+        }
+
+        button {
+            width: 150px;
+        }
+    }
+}

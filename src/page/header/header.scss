@@ -1,0 +1,204 @@
+@import "../../utils/scss/var.scss";
+
+.trigger {
+  color: #fff;
+  margin-left: -30px;
+}
+
+.Sabinas_logo {
+  padding-top: 20px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.Sabinas_logo .spamcha_logo {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  color: yellow;
+  max-width: 130px;
+  max-height: 50px;
+  overflow: hidden;
+  transition: all 0.5s;
+  max-width: 130px;
+}
+
+.none {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.ant-menu-root {
+  background-color: blue !important;
+}
+
+.hum {
+  display: none;
+}
+
+.header {
+  background-color: #fff !important;
+  padding: 5px;
+  padding-left: 50px;
+}
+
+.ant-menu-item-selected {
+  background: #01265f !important;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-right: 5px;
+  max-width: 95%;
+}
+
+.ant-menu-item {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-right: 5px;
+  max-width: 95%;
+}
+
+.header_father {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff !important;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 60px;
+
+  .header_h11 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0061f7;
+    margin: 0;
+  }
+
+  .header_data {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #0061f7;
+  }
+
+  .rigth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .header-til {
+    color: #000000;
+    background-color: transparent;
+    border: none;
+  }
+
+  .sun {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4c4c4;
+    padding: 9px;
+    cursor: pointer;
+  }
+}
+
+// Stils
+.header_father-dark {
+  background-color: #10101c !important;
+  background-color: #161624 !important;
+
+  & * {
+    color: #fff !important;
+  }
+
+  & .sun {
+    background-color: #222235;
+  }
+}
+
+// Dark
+
+@media only screen and (max-width: 1020px) {
+  .header_data {
+    font-size: 20px !important;
+  }
+
+  .header_h11 {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sun {
+    padding: 5px !important;
+  }
+
+  .header_data {
+    font-size: 15px !important;
+    position: absolute;
+    right: 180px;
+    top: 10px;
+  }
+
+  .soat {
+    top: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header_data {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header_father {
+    background-color: #2f49d1 !important;
+
+    & * {
+      color: #fff !important;
+    }
+  }
+
+  .header_father-dark {
+    background-color: #161637 !important;
+  }
+
+  .hum {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .ant-layout-sider {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .header-til {
+    display: none;
+  }
+
+  .sun,
+  .sun-img {
+    display: none !important;
+  }
+}
