@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { SendOutlined } from '@ant-design/icons'
 import { Button, notification } from 'antd'
 import { SmileOutlined } from '@ant-design/icons'
-import logo from '../../img/lincor.svg'
 import useComponent from '../../hooks/useComponent'
 import { host } from '../../utils/api'
 import './login.scss'
@@ -94,68 +93,7 @@ function Login () {
       }, 1000)
     }
 
-    // enterLoading(2)
-    // if (email && password) {
-    //   fetch(host + '/users/admin/login', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({
-    //       password,
-    //       email
-    //     })
-    //   })
-    //     .then(re => re.json())
-    //     .then(data => {
-    //       if (data.status === 200) {
-    //         setParol(true)
-    //         localStorage.setItem('loginParol', JSON.stringify('4:00'))
-    //         api.open({
-    //           message: 'Error Title',
-    //           description:
-    //             'Siz kiritgan Email pochtangizga kod jonatdik shuni kiriting!!!',
-    //           icon: (
-    //             <SmileOutlined
-    //               style={{
-    //                 color: '#108ee9'
-    //               }}
-    //             />
-    //           )
-    //         })
-    //       } else {
-    //         api.open({
-    //           message: 'Error Title',
-    //           description:
-    //             'Malumotlaringiz togri ekanligiga ishonch hosil qiling!!!',
-    //           icon: (
-    //             <SmileOutlined
-    //               style={{
-    //                 color: '#FF0000'
-    //               }}
-    //             />
-    //           )
-    //         })
-    //       }
-    //     })
-    // } else {
-    //   api.open({
-    //     message: 'Error Title',
-    //     description: 'Malumotlaringiz togri ekanligiga ishonch hosil qiling!!!',
-    //     icon: (
-    //       <SmileOutlined
-    //         style={{
-    //           color: '#FF0000'
-    //         }}
-    //       />
-    //     )
-    //   })
-    //   setError(true)
 
-    //   setTimeout(() => {
-    //     setError(false)
-    //   }, 1000)
-    // }
   }
 
   if (parol) {
@@ -232,8 +170,9 @@ function Login () {
 
   return (
     <div className='login'>
-      <div className='left'>
-        <img src={logo} alt='' />
+      <div className='left' style={{fontSize:'60px', color : 'blue'}}>
+        {/* <img src={logo} alt='' /> */}
+        Coaching Zona 
       </div>
       <div className='right'>
         <h1 className='signIn'>Sign In</h1>

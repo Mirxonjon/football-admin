@@ -351,7 +351,7 @@ const LayoutMe = () => {
             >
               <img width={50} height={50} src={Logo} alt='logo' />
               <span className={`${collapsed ? 'none' : 'spamcha_logo'}`}>
-                Lin Cor
+              Coaching Zona
               </span>
             </div>
 
@@ -463,7 +463,7 @@ const LayoutMe = () => {
           >
             <img width={50} height={50} src={Logo} alt='logo' />
             <span className={`${!menubar ? 'none' : 'spamcha_logo'}`}>
-              LinCor
+            Coaching Zona
             </span>
           </div>
           <span className='menu_orqasi'></span>
