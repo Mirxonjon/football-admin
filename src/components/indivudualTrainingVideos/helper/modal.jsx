@@ -160,12 +160,10 @@ const ModalVideo = () => {
             <select ref={Category}>
           <option defaultValue='null' defaultChecked value='null' > Tanlang </option>
 
-              {course.length
+          {course.length
                 ? course.map((e, i) => (
                     <option key={i} value={e?.id}>
-                          <option key={i} value={e?.id}>
                       Guruhi : {e?.title}
-                    </option>
                     </option>
                   ))
                 : null}
