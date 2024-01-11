@@ -137,9 +137,9 @@ function InputsCourse () {
           <span>Kurs haqida qisqacha ma’lumot  rus tilida</span>
           <input ref={description_training_ru} type='text' placeholder='Kurs haqida qisqacha rus tilida ' />
         </li>
-        <li className='IndividualTraininggrouprasm'>
+        <li className='rasm'>
           <span>Rasm</span>
-          <label htmlFor='rasm'>
+          <label htmlFor='IndividualTraininggrouprasm'>
             <i>Yuklash</i>
             <img src={yukla} alt='yukla' />
           </label>
