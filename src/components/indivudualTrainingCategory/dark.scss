@@ -1,0 +1,56 @@
+.main_dark {
+  h1 {
+    color: #fff;
+  }
+
+  ul {
+    li {
+      span {
+        color: rgba(196, 196, 196, 1);
+      }
+
+      input,
+      select {
+        background: #515c8d;
+        color: #fff;
+
+        &::-webkit-input-placeholder {
+          color: #ffffffc2;
+        }
+
+        &::-moz-placeholder {
+          color: #ffffffc2;
+        }
+
+        &:-ms-input-placeholder {
+          color: #ffffffc2;
+        }
+
+        &:-moz-placeholder {
+          color: #ffffffc2;
+        }
+      }
+    }
+
+    .rasm {
+      label {
+        background: #515c8d !important;
+        color: #fff;
+      }
+    }
+  }
+
+  button {
+    background: #192152;
+  }
+
+  .modal_course {
+    background-color: #222235;
+
+    ul {
+      li {
+        background-color: #222235;
+      }
+    }
+  }
+}

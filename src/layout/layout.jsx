@@ -92,6 +92,42 @@ const LayoutMe = () => {
         navigate('video')
         localStorage.setItem('xisobos', JSON.stringify(Tillar[0]['uz'].guruh))
       break
+
+      case 'Individual Mashgulotlar guruhi':
+        setNav('indivudualTRCategory')
+        navigate('indivudualTRCategory')
+        localStorage.setItem('xisobos', JSON.stringify(Tillar[0]['uz'].individual))
+      break
+
+      case 'Индивидуальная группа обучения':
+        setNav('indivudualTRCategory')
+        navigate('indivudualTRCategory')
+        localStorage.setItem('xisobos', JSON.stringify(Tillar[0]['uz'].individual))
+      break
+
+      case 'Individual Training Group':
+        setNav('indivudualTRCategory')
+        navigate('indivudualTRCategory')
+        localStorage.setItem('xisobos', JSON.stringify(Tillar[0]['uz'].individual))
+      break
+
+      case 'Individual Mashgulotlar videosi':
+        setNav('indivudualTRVideo')
+        navigate('indivudualTRVideo')
+        localStorage.setItem('xisobos', JSON.stringify(Tillar[0]['uz'].individualVideo))
+      break
+
+      case 'Видео индивидуального обучения':
+        setNav('indivudualTRVideo')
+        navigate('indivudualTRVideo')
+        localStorage.setItem('xisobos', JSON.stringify(Tillar[0]['uz'].individualVideo))
+      break
+
+      case 'Individual training video':
+        setNav('indivudualTRVideo')
+        navigate('indivudualTRVideo')
+        localStorage.setItem('xisobos', JSON.stringify(Tillar[0]['uz'].individualVideo))
+      break
       case 'Musobaqa':
         setNav('competitionCategory')
         navigate('competitionCategory')
@@ -327,6 +363,10 @@ const LayoutMe = () => {
       setHead(Tillar[0][lang].kitoblarguruhi)
     }else if (son === '14') {
       setHead(Tillar[0][lang].konspektlarguruhi)
+    }else if (son === '16') {
+      setHead(Tillar[0][lang].individual)
+    }else if (son === '17') {
+      setHead(Tillar[0][lang].individualVideo)
     }else if (son === '15') {
       setHead(Tillar[0][lang].sozla)
     }
@@ -380,6 +420,16 @@ const LayoutMe = () => {
                   key: '3',
                   icon: <VideoCameraAddOutlined style={{ fontSize: 20 }} />,
                   label: `${Tillar[0][lang].guruh}`
+                },
+                  {
+                  key: '16',
+                  icon: <OrderedListOutlined style={{ fontSize: 20 }} />,
+                  label: `${Tillar[0][lang].individual}`
+                },
+                {
+                  key: '17',
+                  icon: <VideoCameraAddOutlined style={{ fontSize: 20 }} />,
+                  label: `${Tillar[0][lang].individualVideo}`
                 },
                 {
                   key: '9',

@@ -9,6 +9,8 @@ import BookCategory from '../components/bookCategory/course'
 import Book from '../components/book/video'
 import ShortBookCategory from '../components/shortbookCategory/course'
 import ShortBook from '../components/shortBook/video'
+import INdivudualTrainingCategory from '../components/indivudualTrainingCategory/course'
+import IndivudualTrainingVideo from '../components/indivudualTrainingVideos/video'
 
 
 function Routerr () {
@@ -19,6 +21,8 @@ function Routerr () {
       <Route path='/kurslar' element={<Course />} />
       <Route path='/TrainingsubCategory' element={<TrainingsubCategory />} />
       <Route path='/video' element={<Video />} />
+      <Route path='/indivudualTRCategory' element={<INdivudualTrainingCategory />} />
+      <Route path='/indivudualTRVideo' element={<IndivudualTrainingVideo />} />
       <Route path='/competitionCategory' element={<CompetitionCategory />} />
       <Route path='/competitionVideo' element={<CompetitionVideos />} /> 
       <Route path='/masterClassCategory' element={<MasterClassCategory />} />
